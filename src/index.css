@@ -1,0 +1,14 @@
+/* * {
+  all: unset;
+} */
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+}
+
+body {
+  font-family: 'Hubballi', "Smooch Sans", Nunito;
+
+}
