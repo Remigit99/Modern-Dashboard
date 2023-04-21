@@ -1,0 +1,4 @@
+.home__main {
+    display: grid;
+    grid-template-columns: 15% auto;
+}

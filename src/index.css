@@ -2,13 +2,44 @@
   all: unset;
 } */
 
-:root {
-  line-height: 1.5;
-  font-weight: 400;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
 
+:root {
+  /*======== Colors ===========*/
+  --color-white: #fff;
+  --color-black: #000;
+
+  /*======== Devices Width ===========*/
+  --lg-container-width: 92%;
+
+  /*======== Transition ===========*/
+  --transition: all 400ms ease-in-out;
 }
 
 body {
   font-family: 'Hubballi', "Smooch Sans", Nunito;
+  line-height: 1.5;
+  overflow-x: hidden;
+  max-width: 1600px;
+}
 
+.container {
+  margin: 0 auto;
+  width: var(--lg-container-width);
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  display: block;
 }

@@ -1,13 +1,14 @@
 import { useState } from 'react'
+import Home from './Pages/Home/Home';
 
 function App() {
 
 
   return (
     <div className="App">
-      <h1>Hi, It's Remi</h1>
+      <Home />
     </div>
   )
 }
 
-export default App
+export default App;
