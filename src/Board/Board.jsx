@@ -4,6 +4,7 @@ import './Board.css'
 import Cards from '../components/Cards/Cards'
 import CircularChart from '../components/Charts/CircularChart'
 import MainChart from '../components/Charts/MainChart'
+import TableComponent from '../components/TableComponent'
 
 const Board = () => {
     return (
@@ -13,6 +14,8 @@ const Board = () => {
                 <CircularChart />
                 <MainChart />
             </div>
+
+            <TableComponent />
         </main>
     )
 }

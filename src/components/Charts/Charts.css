@@ -13,7 +13,7 @@
 
 .bar {
     margin: 1.2rem 0;
-    width: 5rem;
+    height: 7rem;
 }
 
 .revenue__stat {
@@ -28,5 +28,6 @@
     box-shadow: 0 0 5px rgb(212, 212, 212);
     padding: 1rem;
     border-radius: 1rem;
+    height: 400px;
 
 }
