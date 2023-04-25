@@ -1,0 +1,32 @@
+.circularchart {
+    text-align: center;
+    box-shadow: 0 0 5px rgb(212, 212, 212);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.circularchart__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar {
+    margin: 1.2rem 0;
+    width: 5rem;
+}
+
+.revenue__stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+
+
+.areachart {
+    box-shadow: 0 0 5px rgb(212, 212, 212);
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
