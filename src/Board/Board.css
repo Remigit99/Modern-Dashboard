@@ -4,3 +4,7 @@
     gap: 4rem;
     margin: 2rem 0;
 }
+
+.main__container {
+    padding: 0 0 2.5rem;
+}
