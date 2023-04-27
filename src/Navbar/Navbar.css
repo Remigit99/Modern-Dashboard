@@ -44,7 +44,12 @@ nav {
     font-family: inherit;
     font-size: 1.2rem;
     font-weight: 500;
-    color: rgb(233, 233, 233);
+    /* color: rgb(233, 233, 233); */
+    color: transparent;
+}
+
+.search__box input::placeholder {
+    color: black;
 }
 
 .nav__notification,

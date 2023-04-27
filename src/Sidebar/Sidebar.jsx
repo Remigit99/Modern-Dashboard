@@ -1,14 +1,7 @@
 
 import React from 'react';
 import './Sidebar.css'
-// import GridViewRoundedIcon from '@mui/icons-material/GridViewRounded';
-// import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
-// import Inventory2OutlinedIcon from '@mui/icons-material/Inventory2Outlined';
-// import CreditCardOutlinedIcon from '@mui/icons-material/CreditCardOutlined';
-// import LocalShippingIcon from '@mui/icons-material/LocalShipping';
-// import AssessmentIcon from '@mui/icons-material/Assessment';
-// import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
-// import MonitorHeartIcon from '@mui/icons-material/MonitorHeart';
+import { Link } from 'react-router-dom';
 
 
 import { RxDashboard } from 'react-icons/rx'
@@ -32,77 +25,106 @@ const Sidebar = () => {
                 <h1>Re<span style={{ color: 'Brown' }}>mi</span></h1>
             </div>
 
-            <hr />
-
             <div className="middle__sec">
                 <ul>
 
                     <div className="main">
                         <p>MAIN</p>
-                        <li>
-                            <RxDashboard className='icon' />
-                            <span> Dashboard</span>
-                        </li>
+
+                        <Link to='/'>
+                            <li>
+                                <RxDashboard className='icon' />
+                                <span> Dashboard</span>
+                            </li>
+                        </Link>
+
                     </div>
 
                     <div className="lists">
                         <p>LISTS</p>
-                        <li>
-                            <HiOutlineUsers className='icon' />
-                            Users
-                        </li>
-                        <li>
-                            <MdWorkOutline className='icon' />
-                            <span>Products</span>
-                        </li>
-                        <li>
-                            <FiCreditCard className='icon' />
-                            <span> Orders</span>
-                        </li>
-                        <li>
-                            <CiDeliveryTruck className='icon' />
-                            <span>Delivery</span>
-                        </li>
+                        <Link to='/users'>
+                            <li>
+                                <HiOutlineUsers className='icon' />
+                                Users
+                            </li>
+                        </Link>
+                        <Link to='/products'>
+                            <li>
+                                <MdWorkOutline className='icon' />
+                                <span>Products</span>
+                            </li>
+                        </Link>
+                        <Link to='/'>
+                            <li>
+                                <FiCreditCard className='icon' />
+                                <span> Orders</span>
+                            </li>
+                        </Link>
+                        <Link to='/'>
+                            <li>
+                                <CiDeliveryTruck className='icon' />
+                                <span>Delivery</span>
+                            </li>
+                        </Link>
                     </div>
 
                     <div className="useful">
                         <p>USEFUL</p>
-                        <li>
-                            <IoIosStats className='icon' />
-                            <span>Stats</span>
-                        </li>
-                        <li>
-                            <IoIosNotificationsOutline className='icon' />
-                            <span>Notifications</span>
-                        </li>
+                        <Link to='/' >
+                            <li>
+                                <IoIosStats className='icon' />
+                                <span>Stats</span>
+                            </li>
+                        </Link>
+
+                        <Link to='/' >
+                            <li>
+                                <IoIosNotificationsOutline className='icon' />
+                                <span>Notifications</span>
+                            </li>
+                        </Link>
                     </div>
 
                     <div className="service">
                         <p>SERVICE</p>
-                        <li>
-                            <TbHeartRateMonitor className='icon' />
-                            <span>System Health </span>
-                        </li>
-                        <li>
-                            <GrSystem className='icon' />
-                            <span>Logs</span>
-                        </li>
-                        <li>
-                            <FiSettings className='icon' />
-                            <span>Settings</span>
-                        </li>
+
+                        <Link to='/'>
+                            <li>
+                                <TbHeartRateMonitor className='icon' />
+                                <span>System Health </span>
+                            </li>
+                        </Link>
+
+                        <Link to='/'>
+                            <li>
+                                <GrSystem className='icon' />
+                                <span>Logs</span>
+                            </li>
+                        </Link>
+
+                        <Link to='/'>
+                            <li>
+                                <FiSettings className='icon' />
+                                <span>Settings</span>
+                            </li>
+                        </Link>
                     </div>
 
                     <div className="user">
                         <p>USER</p>
-                        <li>
-                            <CgProfile className='icon' />
-                            <span>Profile</span>
-                        </li>
-                        <li>
-                            <FiLogOut className='icon' />
-                            <span>Logout</span>
-                        </li>
+                        <Link to='/single'>
+                            <li>
+                                <CgProfile className='icon' />
+                                <span>Profile</span>
+                            </li>
+                        </Link>
+
+                        <Link to='/'>
+                            <li>
+                                <FiLogOut className='icon' />
+                                <span>Logout</span>
+                            </li>
+                        </Link>
                     </div>
 
                     <div className="theme">

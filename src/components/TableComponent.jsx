@@ -17,35 +17,52 @@ const TableComponent = () => {
             <TableContainer component={Paper}>
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead>
-                        <TableRow>
-                            <TableCell>Dessert (100g serving)</TableCell>
-                            <TableCell align="right">Calories</TableCell>
-                            <TableCell align="right">Fat&nbsp;(g)</TableCell>
-                            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-                            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+                        <TableRow style={{ fontWeight: 'bolder' }}>
+                            <TableCell align="right">Tracking ID</TableCell>
+                            <TableCell align="right">Product</TableCell>
+                            <TableCell align="right">Customer</TableCell>
+                            <TableCell align="right">Date</TableCell>
+                            <TableCell align="right">Amount</TableCell>
+                            <TableCell align="right">Payment Method</TableCell>
+                            <TableCell align="right">Status</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {rows.map((row) => (
+                        {rows.map(({ id, product, img, customer, date, amount, method, status }) => (
                             <TableRow
-                                key={row.name}
+                                key={id}
                                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                             >
-                                <TableCell component="th" scope="row">
+                                {/* <TableCell component="th" scope="row">
                                     {row.name}
-                                </TableCell>
-                                <TableCell align="right">{row.calories}</TableCell>
-                                <TableCell align="right">{row.fat}</TableCell>
-                                <TableCell align="right">{row.carbs}</TableCell>
-                                <TableCell align="right">{row.protein}</TableCell>
+                                </TableCell> */}
+                                <TableCell align="right">#{id}</TableCell>
+                                <TableCell align="right">
+                                    <span><img src={img} alt={product} /></span>
+                                    {product}</TableCell>
+                                <TableCell align="right">{customer}</TableCell>
+                                <TableCell align="right">{date}</TableCell>
+                                <TableCell align="right">{amount}</TableCell>
+                                <TableCell align="right">{method}</TableCell>
+                                <TableCell align="right">{status}</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>
                 </Table>
             </TableContainer>
 
+
         </div>
     )
 }
+
+// id: 1143155,
+// product: "Acer Nitro 5",
+// img: "https://m.media-amazon.com/images/I/81bc8mA3nKL._AC_UY327_FMwebp_QL65_.jpg",
+// customer: "John Smith",
+// date: "1 March",
+// amount: 785,
+// method: "Cash on Delivery",
+// status: "Approved",
 
 export default TableComponent;
